@@ -21,7 +21,7 @@ substitutions:
   _CINAME : gke-image
   _VERSION : latest
   _LOCATION: europe-southwest1
-  _REPOSITORY_NAME: myrepo-madrid
+  _REPOSITORY_NAME: my-repo-madrid
   _CLUSTER_NODES_ZONE: europe-west1-c
   _CLUSTER_NAME: cluster-cicd
 
