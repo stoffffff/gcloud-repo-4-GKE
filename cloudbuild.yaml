@@ -28,3 +28,7 @@ substitutions:
   _CLUSTER_NODES_ZONE: europe-west1-c
   _CLUSTER_NAME: cluster-cicd
 
+options:  
+  logging : CLOUD_LOGGING_ONLY
+timeout: 1600s
+
