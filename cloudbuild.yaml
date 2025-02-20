@@ -11,7 +11,7 @@ steps:
   - 'set'
   - 'image'
   - 'deployment/${_DEPLOYMENT_NAME}'
-  - 'runimage-sha256-1=${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY_NAME}/${_CINAME}:${_VERSION}'
+  - 'gke-container=${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY_NAME}/${_CINAME}:${_VERSION}'
   env : 
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLUSTER_NODES_ZONE}'
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER_NAME}'
