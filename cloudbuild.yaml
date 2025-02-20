@@ -10,7 +10,7 @@ steps:
   args :
   - 'set'
   - 'image'
-  - 'deployment/cicd-app-1'
+  - 'deployment/${_DEPLOYMENT_NAME}'
   - 'runimage-sha256-1=${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY_NAME}/${_CINAME}:${_VERSION}'
   env : 
   - 'CLOUDSDK_COMPUTE_ZONE=${_CLUSTER_NODES_ZONE}'
@@ -24,7 +24,7 @@ substitutions:
   _REPOSITORY_NAME: my-repo-madrid
   _CLUSTER_NODES_ZONE: europe-west1
   _CLUSTER_NAME: cluster-cicd
-
+  _DEPLOYMENT_NAME: deployment-1
 options:  
   logging : CLOUD_LOGGING_ONLY
 timeout: 1600s
