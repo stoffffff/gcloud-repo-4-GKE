@@ -17,7 +17,7 @@ steps:
   - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER_NAME}'
 
 substitutions:
-  _PROJECT_ID : gcp-devops-338510
+  _PROJECT_ID : gcp-devops-451014
   _CINAME : gke-image
   _VERSION : latest
   _LOCATION: europe-southwest1
