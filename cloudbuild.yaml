@@ -22,7 +22,7 @@ substitutions:
   _VERSION : latest
   _LOCATION: europe-southwest1
   _REPOSITORY_NAME: my-repo-madrid
-  _CLUSTER_NODES_ZONE: europe-west1-c
+  _CLUSTER_NODES_ZONE: europe-west1
   _CLUSTER_NAME: cluster-cicd
 
 options:  
