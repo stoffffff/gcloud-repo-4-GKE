@@ -1,7 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://source.developers.google.com/p/gcp-devops-338510/r/repo-5']
-
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t',  '${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY_NAME}/${_CINAME}:${_VERSION}', '.']
 
